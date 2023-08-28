@@ -1,0 +1,14 @@
+.course__button {
+    width: 100%;
+    padding-block: 10px;
+    
+    background-color: white;
+    color: black;
+    border: 1px var(--app-border-color) solid;
+    border-radius: var(--app-border-radius);
+}
+
+.course__button.active {
+    background-color: #05a95c;
+    color: white;
+}

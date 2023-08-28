@@ -1,0 +1,48 @@
+html, body, h1, h2, h3, h4, h5, h6, div, span, p, pre, hr, em, strong, b, i, a,
+acronym, applet, address, dfn, tt, var, kbd, samp, ruby,
+blockquote, q, cite, ins, del, s, strike, u, sub, sup, big, small, abbr, center,
+table, tr, th, td, caption, thead, tbody, tfoot,
+form, input, label, textarea, button, fieldset, legend, select, canvas,
+article, section, footer, header, main, hgroup, nav, aside, audio, video,
+details, summary, menu, output, figure, figcaption, time, mark,
+ul, ol, li, dl, dt, dd, code, img, iframe, object, embed { margin: 0; padding: 0; }
+
+input { vertical-align: middle; }
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea { -webkit-appearance: none; }
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button { cursor: pointer; overflow: visible; -webkit-appearance: button; }
+button[disabled], input[disabled] { cursor: default; }
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="search"] {
+    padding: 2px 6px;
+    border: 1px solid #787878;
+    background: #fff;
+    font: inherit; color: inherit;
+}
+textarea {
+    vertical-align: top;
+    padding: 3px 6px;
+    overflow: auto;
+    border: 1px solid #787878;
+    background: #fff;
+    font: inherit; color: inherit;
+}
+select {
+    vertical-align: middle;
+    border: 1px solid #787878;
+    background: #fff;
+    font: inherit; color: inherit;
+}
+input::-webkit-input-placeholder { color: #ccc !important; }
+input::-moz-placeholder { color: #ccc !important; }
+input:-ms-input-placeholder { color: #ccc !important; }
+

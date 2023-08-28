@@ -1,0 +1,10 @@
+.course_input {
+    border: 1px var(--app-border-color) solid;
+    border-radius: var(--app-border-radius);
+
+    height: 120px;
+
+    color: black;
+    font-size: 42px;
+    font-weight: 800;
+}
