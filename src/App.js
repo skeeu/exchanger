@@ -8,8 +8,8 @@ import FormOut from "./components/FormOut/FormOut";
 export default function App() {
   const [currencies, setCurrencies] = useState({});
   const [courses, setCourses] = useState([]);
-  const [courseInputIn, setCourseInputIn] = useState("");
-  const [courseInputOut, setCourseInputOut] = useState("");
+  const [courseInputIn, setCourseInputIn] = useState("1");
+  const [courseInputOut, setCourseInputOut] = useState("1");
 
   const [activeCourseIn, setActiveCourseIn] = useState(courses[0]);
   const [activeCourseOut, setActiveCourseOut] = useState(courses[0]);
@@ -51,7 +51,6 @@ export default function App() {
           setCourseInputOut={setCourseInputOut}
         />
         <FormOut
-          currencies={currencies}
           courses={courses}
           activeCourseOut={activeCourseOut}
           setActiveCourseOut={setActiveCourseOut}

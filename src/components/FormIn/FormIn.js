@@ -13,9 +13,10 @@ export default function FormIn({
 }) {
   useEffect(() => {
     if (Object.keys(currencies).length > 0) {
-      setCourseInputOut(
+      const result = (
         currencies[activeCourseIn][activeCourseOut] * courseInputIn
-      );
+      ).toFixed(2);
+      setCourseInputOut(result);
     }
   }, [courseInputIn, activeCourseIn, activeCourseOut]);
 
@@ -24,7 +25,13 @@ export default function FormIn({
   };
 
   const onChange = (e) => {
-    setCourseInputIn(e.target.value);
+    if (!isNaN(e.target.value) && e.target.value.length < 19) {
+      if (e.target.value.length === 0) {
+        setCourseInputIn(1);
+        return;
+      }
+      setCourseInputIn(e.target.value);
+    }
   };
 
   return (
