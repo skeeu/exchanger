@@ -4,6 +4,7 @@ export const fetchCourseData = async () => {
       `http://data.fixer.io/api/latest?access_key=${process.env.REACT_APP_API_SECRET}`
     );
     if (res.status === 200) {
+      return <div></div>;
       return res.json();
     }
     throw new Error(`Status code: ${res.status}. Data fethed unsuccessfully`);
